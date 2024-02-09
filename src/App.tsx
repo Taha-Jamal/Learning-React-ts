@@ -10,6 +10,7 @@ import ListGroup from "./components/ListGroup";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
 
 function App() {
   // let items = ["Pak", "India", "Indonesia"];
@@ -149,10 +150,15 @@ function App() {
 
   return (
     <div>
-      <ExpandableText >
-        hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni saepe omnis ullam aut molestiae enim voluptas eaque consequatur. Ratione officiis, quae id laudantium perferendis omnis eligendi tempora temporibus, itaque totam dolor cum et maxime numquam necessitatibus illo, molestiae modi aspernatur. In sunt quia voluptas nihil expedita vel id iure hic nulla, quo, doloremque fugit quam magnam laudantium labore enim fuga qui, nesciunt commodi sit dolorum modi eaque itaque ut. A aliquam, iste dolorum id maxime reiciendis! Cum, laboriosam ut dolore esse ex libero perferendis assumenda animi veniam facilis? Distinctio quis eveniet nam doloribus minus dolorem voluptas at reprehenderit natus?
-      </ExpandableText>
+      <Form />
     </div>
+
+    // expandable text component
+    // <div>
+    //   <ExpandableText >
+    //     hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni saepe omnis ullam aut molestiae enim voluptas eaque consequatur. Ratione officiis, quae id laudantium perferendis omnis eligendi tempora temporibus, itaque totam dolor cum et maxime numquam necessitatibus illo, molestiae modi aspernatur. In sunt quia voluptas nihil expedita vel id iure hic nulla, quo, doloremque fugit quam magnam laudantium labore enim fuga qui, nesciunt commodi sit dolorum modi eaque itaque ut. A aliquam, iste dolorum id maxime reiciendis! Cum, laboriosam ut dolore esse ex libero perferendis assumenda animi veniam facilis? Distinctio quis eveniet nam doloribus minus dolorem voluptas at reprehenderit natus?
+    //   </ExpandableText>
+    // </div>
 
     // cart list
     // <div>
