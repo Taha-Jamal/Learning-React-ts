@@ -132,27 +132,28 @@ function App() {
   // };
 
   // Exercise 3
-  const [cart, setCart] = useState({
-    discount: 0.1,
-    items: [
-      { id: 1, title: "prodect1", quantity: 1 },
-      { id: 2, title: "prodect2", quantity: 1 },
-    ],
-  });
+  // const [cart, setCart] = useState({
+  //   discount: 0.1,
+  //   items: [
+  //     { id: 1, title: "prodect1", quantity: 1 },
+  //     { id: 2, title: "prodect2", quantity: 1 },
+  //   ],
+  // });
 
-  const handleClick = () => {
-    setCart({
-      ...cart,
-      items: cart.items.map((item) =>
-        item.id === 1 ? { ...item, quantity: item.quantity++ } : item
-      ),
-    });
-  };
+  // const handleClick = () => {
+  //   setCart({
+  //     ...cart,
+  //     items: cart.items.map((item) =>
+  //       item.id === 1 ? { ...item, quantity: item.quantity++ } : item
+  //     ),
+  //   });
+  // };
 
   return (
     <div>
       {/* <Form /> */}
-    <ZodForm />
+    {/* <ZodForm /> */}
+    
     </div>
 
     // expandable text component
