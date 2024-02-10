@@ -1,13 +1,19 @@
 import React, { FormEvent, useRef, useState } from "react";
 import { FieldValue, FieldValues, useForm } from "react-hook-form";
 
+interface FormData {
+  name: string;
+  age: number;
+}
 const Form = () => {
   // using hook library
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
 
-    const onSubmit = (data: FieldValues) => console.log(data);
-    
-
+  const onSubmit = (data: FieldValues) => console.log(data);
 
   // using state hook for getting values of input field
   //   const [isperson, setPerson] = useState({
@@ -43,7 +49,7 @@ const Form = () => {
           Name
         </label>
         <input
-          {...register("name")}
+          {...register("name", { required: true, minLength: 3 })}
           //   onChange={(event) =>
           //     setPerson({ ...isperson, name: event.target.value })
           //   }
@@ -53,6 +59,12 @@ const Form = () => {
           type="text"
           className="form-control"
         />
+        {errors.name?.type === "required" && (
+          <p className="text-red-600">The name field is required</p>
+        )}
+        {errors.name?.type === "minLength" && (
+          <p className="text-red-600">The name must be atleast 3 characters</p>
+        )}
       </div>
       <div className="mb-3">
         <label htmlFor="age" className="forum-label mx-2">

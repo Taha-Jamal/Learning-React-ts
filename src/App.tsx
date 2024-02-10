@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import ExpandableText from "./components/ExpandableText";
 import Form from "./components/Form";
+import ZodForm from "./components/ZodForm";
 
 function App() {
   // let items = ["Pak", "India", "Indonesia"];
@@ -150,7 +151,8 @@ function App() {
 
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
+    <ZodForm />
     </div>
 
     // expandable text component

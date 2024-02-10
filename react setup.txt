@@ -1,0 +1,10 @@
+npm create vite@4.1.0
+cd react-app "project_name is react-app rn "
+  npm install 
+  npm run dev
+
+// Libraries
+
+npm i react-hook-form@7.43
+npm i zod@3.20.6 // for validation of forms
+npm i @hookform/resolvers@2.9.11
